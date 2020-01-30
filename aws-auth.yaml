@@ -15,7 +15,7 @@ data:
         - system:bootstrappers
         - system:nodes
 
-    - rolearn: arn:aws:iam::361132770001:role/service-role/codebuild-EKS_Build-service-role
+    - rolearn: arn:aws:iam::361132770001:role/service-role/codebuild-CodeBuild_APIGateWay_Test-service-role
       username: admin
       groups:
         - system:masters
