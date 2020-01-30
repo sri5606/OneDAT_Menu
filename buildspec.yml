@@ -38,6 +38,6 @@ phases:
       - export AWS_EXPIRATION=$(echo ${CREDENTIALS} | jq -r '.Credentials.Expiration')
       - aws sts get-caller-identity
       - aws eks update-kubeconfig --name $EKS_CLUSTER_NAME
-      - kubectl apply -f https://raw.githubusercontent.com/UttOneDat/OneDAT_Menu/master/hello-k8s.yml
+      - kubectl apply -f https://raw.githubusercontent.com/sri5606/OneDAT_Menu/master/hello-k8s.yml
   #       - kubectl get svc | grep elb
       # - printf '[{"name":"hello-k8s","imageUri":"%s"}]' $REPOSITORY_URI:$TAG > build.json
